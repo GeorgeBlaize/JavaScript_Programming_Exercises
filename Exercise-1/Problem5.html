@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem5</title>
+    <script>
+        function factorial()
+        {
+            var i,num,fact;
+            fact=1;
+            num=Number(document.getElementById("number").value);
+            for(i=1; i<=num; i++)
+            {
+                fact=fact*i;
+            }
+
+            document.getElementById("answer").value=fact;
+
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Factorial of number -->
+    
+    Enter Num: <input id="number"> &nbsp;
+    <button onclick="factorial()">Factorial</button> &nbsp;
+    <input id="answer">
+    
+</body>
+</html>
