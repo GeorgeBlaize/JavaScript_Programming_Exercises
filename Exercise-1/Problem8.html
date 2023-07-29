@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem8</title>
+    <script>
+        function armStrong()
+        {
+            var arm=0,a,b,c,d,num;
+            num=Number(document.getElementById("number").value);
+
+            temp=num;
+            while(temp>0)
+            {
+                a=temp%10;
+                temp=parseInt(temp/10);
+                arm=arm+a*a*a;
+
+            }
+            if(arm==num)
+            {
+                alert("Armstrong number");
+            }
+            else
+            {
+                alert("Not Armstrong number");
+            }
+        }
+    </script>
+</head>
+<body>
+    
+    <!-- Armstrong number -->
+    Enter any Number:<input id="number"> &nbsp;
+    <button onclick="armStrong()">Check</button>
+</body>
+</html>
