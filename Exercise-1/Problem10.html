@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem10</title>
+    <script>
+        function verify()
+        {
+            var num;
+            num=Number(document.getElementById("age").value);
+            if(num<18)
+            {
+                alert("Under 18");
+            }
+            else
+            {
+                alert("You are Adult");
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- Verify age of person -->
+    Enter your age: <input id="age"> <br>
+    <button onclick="verify()">Click me</button>
+
+</body>
+</html>
